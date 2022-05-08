@@ -1,0 +1,14 @@
+cartopy
+cdsapi
+geopandas
+geoviews
+grequests
+holoviews
+hvplot
+netcdf4
+numpy
+pandas
+plotly
+pyaml
+xarray
+yaml

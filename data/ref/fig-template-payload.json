@@ -1,0 +1,64 @@
+{
+    "output": "..ts-modal.children...ts-modal.is_open...{\"index\":[\"ALL\"],\"tag\":\"ts-button\"}.n_clicks..",
+    "outputs": [
+        {
+            "id": "ts-modal",
+            "property": "children"
+        },
+        {
+            "id": "ts-modal",
+            "property": "is_open"
+        },
+        [
+            {
+                "id": {
+                    "index": "median",
+                    "tag": "ts-button"
+                },
+                "property": "n_clicks"
+            }
+        ]
+    ],
+    "inputs": [
+        [
+            {
+                "id": {
+                    "index": "median",
+                    "tag": "ts-button"
+                },
+                "property": "n_clicks",
+                "value": 1
+            }
+        ]
+    ],
+    "changedPropIds": [
+        "{\"index\":\"median\",\"tag\":\"ts-button\"}.n_clicks"
+    ],
+    "state": [
+        {
+            "id": "model-dropdown",
+            "property": "value",
+            "value": [
+                "median"
+            ]
+        },
+        {
+            "id": "model-date-picker",
+            "property": "date",
+            "value": "20220416"
+        },
+        {
+            "id": "variable-dropdown-forecast",
+            "property": "value",
+            "value": "SCONC_DUST"
+        },
+        {
+            "id": "model-clicked-coords",
+            "property": "data",
+            "value": [
+                35.03581217039174,
+                33.21716308593751
+            ]
+        }
+    ]
+}
