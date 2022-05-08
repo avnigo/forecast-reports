@@ -100,8 +100,6 @@ def publish(
             "displaylogo": False
         },
         include_plotlyjs="cdn",
-        # auto_open=True,
-        # full_html=True,
     )
 
 
@@ -113,8 +111,6 @@ def get_updates(views: dict) -> dict:
         "y": 1.0,
         "pad": {"r": 20, "b": 27},
         "direction": "down",
-        # "type": "buttons",
-        # "font_size": 14,
         "active": 0,
         "buttons": [
             {

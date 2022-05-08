@@ -34,14 +34,12 @@ def read_files(
 
 def get_probability_df(tbls: list[pd.DataFrame]) -> pd.DataFrame:
     return (
-        # gp.GeoDataFrame(pd.concat(tbls))
         pd.concat(tbls)
             .drop(columns=['id', 'value'])
             .set_index(['day', 'level'])
             .sort_index()
             .groupby(['day', 'level'])
             .max()
-            # .unstack()
             .reset_index()
     )
 
