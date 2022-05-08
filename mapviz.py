@@ -3,9 +3,9 @@ import xarray as xr
 import pandas as pd
 import hvplot.xarray
 
-from pathlib import Path
 from cartopy import crs
 from datetime import date, datetime
+from pathlib import Path
 
 
 def read_data(nc_file: Path):

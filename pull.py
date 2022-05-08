@@ -2,11 +2,11 @@ import cdsapi
 import yaml
 import extract
 
+from collections.abc import Mapping
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 from shutil import rmtree
-from collections.abc import Mapping
 
 
 @dataclass

@@ -2,12 +2,12 @@ import scrape
 
 from exceedance import get_exceedance_plot
 from extract import Area, process_nc
+from mapviz import plot_map
 from pathlib import Path
 from plot import load_json_fig, create_plots
 from pull import get_cds_forecast
 from reference import stations
 from shutil import copy
-from mapviz import plot_map
 
 PATH = Path(__file__).parent
 
@@ -36,7 +36,6 @@ def run_map() -> None:
             area=[39.33, 9.02, 30, 45],
         )
     )
-
 
 
 if __name__ == "__main__":

@@ -113,7 +113,6 @@ def process_nc(
 
 
 if __name__ == "__main__":
-    # downloads = get_cds_forecast()
     downloads = pull.get_cds_forecast(pull.Period(date(2022, 4, 9), date(2022, 4, 9)))
 
     points = Area.combine(

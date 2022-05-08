@@ -4,14 +4,13 @@ import plotly.express as px
 import plotly.graph_objs as go
 import plotly.io as io
 
-from typing import Iterator
+from datetime import date, datetime
+from extract import Area, Process
 from itertools import pairwise
 from pathlib import Path
-from datetime import date, datetime
-
-from extract import Area, Process
 from pull import Period
 from reference import species_name, quant_name, fig_defaults
+from typing import Iterator
 
 
 def make_traces(df: pd.DataFrame, fig: go.Figure, process: Process) -> dict:
