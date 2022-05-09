@@ -14,7 +14,7 @@ def read_files(
 
     def format_df(name: str, df: pd.DataFrame) -> pd.DataFrame:
         (day_no, date, *_, level) = name.split('_')
-        df['day'] = datetime.strptime(date, "%Y%m%d") + timedelta(days=int(day_no))
+        df['day'] = datetime.strptime(date, "%Y%m%d") + timedelta(days=int(day_no)+1)
         df['level'] = int(level)
         df['probability'] = df['value'].astype(int) - 5
         return df
@@ -34,12 +34,14 @@ def read_files(
 
 def get_probability_df(tbls: list[pd.DataFrame]) -> pd.DataFrame:
     return (
+        # gp.GeoDataFrame(pd.concat(tbls))
         pd.concat(tbls)
             .drop(columns=['id', 'value'])
             .set_index(['day', 'level'])
             .sort_index()
             .groupby(['day', 'level'])
             .max()
+            # .unstack()
             .reset_index()
     )
 
