@@ -1,6 +1,6 @@
 import cdsapi
-import yaml
 import extract
+import yaml
 
 from collections.abc import Mapping
 from dataclasses import dataclass
