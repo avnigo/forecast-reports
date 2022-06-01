@@ -68,7 +68,7 @@ def get_timeseries_plot(
         payload = json.loads(f.read())
 
     payload["state"][1]["value"] = day
-    payload["state"][3]["value"] = lat_lon
+    payload["state"][3]["value"]["median"] = lat_lon
 
     response = requests.post(f"{root}/{api_path}", json=payload)
 

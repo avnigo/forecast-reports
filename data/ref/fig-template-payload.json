@@ -16,11 +16,41 @@
                     "tag": "ts-button"
                 },
                 "property": "n_clicks"
+            },
+            {
+                "id": {
+                    "index": "median",
+                    "tag": "ts-button"
+                },
+                "property": "n_clicks"
+            },
+            {
+                "id": {
+                    "index": "median",
+                    "tag": "ts-button"
+                },
+                "property": "n_clicks"
             }
         ]
     ],
     "inputs": [
         [
+            {
+                "id": {
+                    "index": "median",
+                    "tag": "ts-button"
+                },
+                "property": "n_clicks",
+                "value": 0
+            },
+            {
+                "id": {
+                    "index": "median",
+                    "tag": "ts-button"
+                },
+                "property": "n_clicks",
+                "value": 0
+            },
             {
                 "id": {
                     "index": "median",
@@ -45,7 +75,7 @@
         {
             "id": "model-date-picker",
             "property": "date",
-            "value": "20220416"
+            "value": "20220529"
         },
         {
             "id": "variable-dropdown-forecast",
@@ -55,10 +85,19 @@
         {
             "id": "model-clicked-coords",
             "property": "data",
-            "value": [
-                35.03581217039174,
-                33.21716308593751
-            ]
+            "value": {
+                "median": [
+                    35.18167000089986,
+                    33.37646484375001
+                ]
+            }
+        },
+        {
+            "id": "current-popups-stored",
+            "property": "data",
+            "value": {
+                "median": 3
+            }
         }
     ]
 }
